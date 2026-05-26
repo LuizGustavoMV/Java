@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.template.MainController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: light grey; -fx-background-color: lightgrey;">
+         <children>
+            <TextField fx:id="txtNome" layoutX="122.0" layoutY="104.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" />
+            <TextField fx:id="txtPreco" layoutX="356.0" layoutY="144.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" />
+            <Label layoutX="262.0" layoutY="148.0" text="Preco do Jogo" />
+            <TextField fx:id="txtGenero" layoutX="122.0" layoutY="144.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" />
+            <TextField fx:id="txtPlataforma" layoutX="356.0" layoutY="104.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" />
+            <Label layoutX="272.0" layoutY="108.0" text="Plataforma" />
+            <Label layoutX="24.0" layoutY="108.0" text="Nome do Jogo" />
+            <Label layoutX="46.0" layoutY="148.0" text="Genero" />
+            <Button fx:id="btnSalvar" layoutX="521.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnSalvarAction" style="-fx-background-color: grey;" text="Salvar" />
+            <Button fx:id="btnDeletar" layoutX="520.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnDeletarAction" style="-fx-background-color: grey;" text="Deletar" />
+            <TextField fx:id="txtId" layoutX="122.0" layoutY="67.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" />
+            <Label layoutX="82.0" layoutY="71.0" text="ID" />
+            <Button fx:id="btnEditar" layoutX="518.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnEditarAction" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: grey;" text="Editar" />
+            <Button fx:id="btnCadrastar" layoutX="513.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnCadrastarAction" style="-fx-background-color: grey;" text="Cadrastar" />
+         </children>
+      </Pane>
+      <TreeTableView layoutX="26.0" layoutY="196.0" prefHeight="200.0" prefWidth="459.0">
+         <columns>
+            <TreeTableColumn fx:id="colId" prefWidth="75.0" style="-fx-background-color: grey;" text="ID" />
+            <TreeTableColumn fx:id="colNome" prefWidth="106.0" style="-fx-background-color: grey;" text="NomeDoJogo" />
+            <TreeTableColumn fx:id="colGenero" prefWidth="89.0" style="-fx-background-color: grey;" text="Genero" />
+            <TreeTableColumn fx:id="colPlataforma" prefWidth="104.0" style="-fx-background-color: grey;" text="Plataforma" />
+            <TreeTableColumn fx:id="colPreco" minWidth="0.0" prefWidth="83.0" style="-fx-background-color: grey;" text="Preco" />
+         </columns>
+      </TreeTableView>
+   </children>
+</AnchorPane>
